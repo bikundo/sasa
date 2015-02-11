@@ -44,23 +44,15 @@
 			});
 		}
 
+
 		//Smooth Scroll
 		//-----------------------------------------------
-		if ($(".smooth-scroll").length>0) {
-			$('.smooth-scroll a[href*=#]:not([href=#]), a[href*=#]:not([href=#]).smooth-scroll').click(function() {
-				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-					if (target.length) {
-						$('html,body').animate({
-							scrollTop: target.offset().top-151
-						}, 1000);
-						return false;
-					}
-				}
-			});
-		}
-
+		smoothScroll.init({
+			speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+			easing: 'Linear', // Easing pattern to use
+			updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+			offset: 0 // Integer. How far to offset the scrolling anchor location in pixels
+		});
 		// Animations
 		//-----------------------------------------------
 		if (($("[data-animation-effect]").length>0) && !Modernizr.touch) {
