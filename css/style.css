@@ -3,11 +3,11 @@
 /* Typography
 ----------------------------------------------------------------------------- */
 body {
-	font-family: 'Questrial', sans-serif;
-	background: red;
+	font-family: 'Dosis', sans-serif;
+	/*background: red;*/
 }
 .site-name {
-	font-family: 'Questrial', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 html,
 body {
@@ -629,12 +629,27 @@ textarea {
 	min-height: 150px!important;
 }
 .social-links li {
-	margin: 10px 25px 10px 0;
+	/*margin: 10px 25px 10px 0;*/
 	display: inline-block;
-	font-size: 36px;
+	font-size: 26px;
 }
 .social-links li a {
-	color: #333333;
+	display: inline-block;
+	background: black;
+	color: white;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	padding-top: 4px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	margin-right: 8px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -642,7 +657,7 @@ textarea {
 	transition: all 0.2s ease-in-out;
 }
 .social-links li.twitter a:hover {
-	color: #FF5252;
+	color: #00aff0;
 }
 .social-links li.skype a:hover {
 	color: #00aff0;
